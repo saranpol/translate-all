@@ -1,0 +1,26 @@
+{{define "index"}}{{template "header" dict "Info" . }}<body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1033577160036468',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    
+    <div id="content"></div>
+    <script src="/js/index.js?v=2"></script>
+
+    {{template "footer"}}
+</body>
+</html>
+{{end}}
