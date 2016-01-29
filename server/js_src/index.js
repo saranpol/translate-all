@@ -246,104 +246,120 @@ var Index = React.createClass({
     },
     render: function() {
         return (
-            <div>
-                Input <input ref="inputText" onChange={this.inputChange} type="text"></input>
-                <OutBox l="af" f="Afrikaans"/>
-                <OutBox l="ar" f="Arabic"/>
-                <OutBox l="az" f="Azerbaijani"/>
-                <OutBox l="be" f="Belarusian"/>
-                <OutBox l="bg" f="Bulgarian"/>
-                <OutBox l="bn" f="Bengali"/>
-                <OutBox l="bs" f="Bosnian"/>
-                <OutBox l="ca" f="Catalan"/>
-                <OutBox l="ceb" f="Cebuano"/>
-                <OutBox l="cs" f="Czech"/>
-                <OutBox l="cy" f="Welsh"/>
-                <OutBox l="da" f="Danish"/>
-                <OutBox l="de" f="German"/>
-                <OutBox l="el" f="Greek"/>
-                <OutBox l="en" f="English"/>
-                <OutBox l="eo" f="Esperanto"/>
-                <OutBox l="es" f="Spanish"/>
-                <OutBox l="et" f="Estonian"/>
-                <OutBox l="eu" f="Basque"/>
-                <OutBox l="fa" f="Persian"/>
-                <OutBox l="fi" f="Finnish"/>
-                <OutBox l="fr" f="French"/>
-                <OutBox l="ga" f="Irish"/>
-                <OutBox l="gl" f="Galician"/>
-                <OutBox l="gu" f="Gujarati"/>
-                <OutBox l="ha" f="Hausa"/>
-                <OutBox l="hi" f="Hindi"/>
-                <OutBox l="hmn" f="Hmong"/>
-                <OutBox l="hr" f="Croatian"/>
-                <OutBox l="ht" f="Haitian Creole"/>
-                <OutBox l="hu" f="Hungarian"/>
-                <OutBox l="hy" f="Armenian"/>
-                <OutBox l="id" f="Indonesian"/>
-                <OutBox l="ig" f="Igbo"/>
-                <OutBox l="is" f="Icelandic"/>
-                <OutBox l="it" f="Italian"/>
-                <OutBox l="iw" f="Hebrew"/>
-                <OutBox l="ja" f="Japanese"/>
-                <OutBox l="jw" f="Javanese"/>
-                <OutBox l="ka" f="Georgian"/>
-                <OutBox l="kk" f="Kazakh"/>
-                <OutBox l="km" f="Khmer"/>
-                <OutBox l="kn" f="Kannada"/>
-                <OutBox l="ko" f="Korean"/>
-                <OutBox l="la" f="Latin"/>
-                <OutBox l="lo" f="Lao"/>
-                <OutBox l="lt" f="Lithuanian"/>
-                <OutBox l="lv" f="Latvian"/>
-                <OutBox l="mg" f="Malagasy"/>
-                <OutBox l="mi" f="Maori"/>
-                <OutBox l="mk" f="Macedonian"/>
-                <OutBox l="ml" f="Malayalam"/>
-                <OutBox l="mn" f="Mongolian"/>
-                <OutBox l="mr" f="Marathi"/>
-                <OutBox l="ms" f="Malay"/>
-                <OutBox l="mt" f="Maltese"/>
-                <OutBox l="my" f="Myanmar (Burmese)"/>
-                <OutBox l="ne" f="Nepali"/>
-                <OutBox l="nl" f="Dutch"/>
-                <OutBox l="no" f="Norwegian"/>
-                <OutBox l="ny" f="Chichewa"/>
-                <OutBox l="pa" f="Punjabi"/>
-                <OutBox l="pl" f="Polish"/>
-                <OutBox l="pt" f="Portuguese"/>
-                <OutBox l="ro" f="Romanian"/>
-                <OutBox l="ru" f="Russian"/>
-                <OutBox l="si" f="Sinhala"/>
-                <OutBox l="sk" f="Slovak"/>
-                <OutBox l="sl" f="Slovenian"/>
-                <OutBox l="so" f="Somali"/>
-                <OutBox l="sq" f="Albanian"/>
-                <OutBox l="sr" f="Serbian"/>
-                <OutBox l="st" f="Sesotho"/>
-                <OutBox l="su" f="Sundanese"/>
-                <OutBox l="sv" f="Swedish"/>
-                <OutBox l="sw" f="Swahili"/>
-                <OutBox l="ta" f="Tamil"/>
-                <OutBox l="te" f="Telugu"/>
-                <OutBox l="tg" f="Tajik"/>
-                <OutBox l="th" f="Thai"/>
-                <OutBox l="tl" f="Filipino"/>
-                <OutBox l="tr" f="Turkish"/>
-                <OutBox l="uk" f="Ukrainian"/>
-                <OutBox l="ur" f="Urdu"/>
-                <OutBox l="uz" f="Uzbek"/>
-                <OutBox l="vi" f="Vietnamese"/>
-                <OutBox l="yi" f="Yiddish"/>
-                <OutBox l="yo" f="Yoruba"/>
-                <OutBox l="zh" f="Chinese Simplified"/>
-                <OutBox l="zh-TW" f="Chinese Traditional"/>
-                <OutBox l="zu" f="Zulu"/>
+            <div className="center">
+                <div className="mdl-card__supporting-text mdl-shadow--2dp mdl-textfield mdl-js-textfield white-bg">
+                    <input ref="inputText" onChange={this.inputChange} className="mdl-textfield__input padding-left" type="text" id="inputText"></input>
+                    <label className="mdl-textfield__label padding-left" for="inputText">Input your text here...</label>
+                </div>
+
+                <table className="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+                    <thead>
+                        <tr>
+                            <th className="mdl-data-table__cell--non-numeric">Language</th>
+                            <th className="mdl-data-table__cell--non-numeric">Translation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <OutBox l="af" f="Afrikaans"/>
+                        <OutBox l="ar" f="Arabic"/>
+                        <OutBox l="az" f="Azerbaijani"/>
+                        <OutBox l="be" f="Belarusian"/>
+                        <OutBox l="bg" f="Bulgarian"/>
+                        <OutBox l="bn" f="Bengali"/>
+                        <OutBox l="bs" f="Bosnian"/>
+                        <OutBox l="ca" f="Catalan"/>
+                        <OutBox l="ceb" f="Cebuano"/>
+                        <OutBox l="cs" f="Czech"/>
+                        <OutBox l="cy" f="Welsh"/>
+                        <OutBox l="da" f="Danish"/>
+                        <OutBox l="de" f="German"/>
+                        <OutBox l="el" f="Greek"/>
+                        <OutBox l="en" f="English"/>
+                        <OutBox l="eo" f="Esperanto"/>
+                        <OutBox l="es" f="Spanish"/>
+                        <OutBox l="et" f="Estonian"/>
+                        <OutBox l="eu" f="Basque"/>
+                        <OutBox l="fa" f="Persian"/>
+                        <OutBox l="fi" f="Finnish"/>
+                        <OutBox l="fr" f="French"/>
+                        <OutBox l="ga" f="Irish"/>
+                        <OutBox l="gl" f="Galician"/>
+                        <OutBox l="gu" f="Gujarati"/>
+                        <OutBox l="ha" f="Hausa"/>
+                        <OutBox l="hi" f="Hindi"/>
+                        <OutBox l="hmn" f="Hmong"/>
+                        <OutBox l="hr" f="Croatian"/>
+                        <OutBox l="ht" f="Haitian Creole"/>
+                        <OutBox l="hu" f="Hungarian"/>
+                        <OutBox l="hy" f="Armenian"/>
+                        <OutBox l="id" f="Indonesian"/>
+                        <OutBox l="ig" f="Igbo"/>
+                        <OutBox l="is" f="Icelandic"/>
+                        <OutBox l="it" f="Italian"/>
+                        <OutBox l="iw" f="Hebrew"/>
+                        <OutBox l="ja" f="Japanese"/>
+                        <OutBox l="jw" f="Javanese"/>
+                        <OutBox l="ka" f="Georgian"/>
+                        <OutBox l="kk" f="Kazakh"/>
+                        <OutBox l="km" f="Khmer"/>
+                        <OutBox l="kn" f="Kannada"/>
+                        <OutBox l="ko" f="Korean"/>
+                        <OutBox l="la" f="Latin"/>
+                        <OutBox l="lo" f="Lao"/>
+                        <OutBox l="lt" f="Lithuanian"/>
+                        <OutBox l="lv" f="Latvian"/>
+                        <OutBox l="mg" f="Malagasy"/>
+                        <OutBox l="mi" f="Maori"/>
+                        <OutBox l="mk" f="Macedonian"/>
+                        <OutBox l="ml" f="Malayalam"/>
+                        <OutBox l="mn" f="Mongolian"/>
+                        <OutBox l="mr" f="Marathi"/>
+                        <OutBox l="ms" f="Malay"/>
+                        <OutBox l="mt" f="Maltese"/>
+                        <OutBox l="my" f="Myanmar (Burmese)"/>
+                        <OutBox l="ne" f="Nepali"/>
+                        <OutBox l="nl" f="Dutch"/>
+                        <OutBox l="no" f="Norwegian"/>
+                        <OutBox l="ny" f="Chichewa"/>
+                        <OutBox l="pa" f="Punjabi"/>
+                        <OutBox l="pl" f="Polish"/>
+                        <OutBox l="pt" f="Portuguese"/>
+                        <OutBox l="ro" f="Romanian"/>
+                        <OutBox l="ru" f="Russian"/>
+                        <OutBox l="si" f="Sinhala"/>
+                        <OutBox l="sk" f="Slovak"/>
+                        <OutBox l="sl" f="Slovenian"/>
+                        <OutBox l="so" f="Somali"/>
+                        <OutBox l="sq" f="Albanian"/>
+                        <OutBox l="sr" f="Serbian"/>
+                        <OutBox l="st" f="Sesotho"/>
+                        <OutBox l="su" f="Sundanese"/>
+                        <OutBox l="sv" f="Swedish"/>
+                        <OutBox l="sw" f="Swahili"/>
+                        <OutBox l="ta" f="Tamil"/>
+                        <OutBox l="te" f="Telugu"/>
+                        <OutBox l="tg" f="Tajik"/>
+                        <OutBox l="th" f="Thai"/>
+                        <OutBox l="tl" f="Filipino"/>
+                        <OutBox l="tr" f="Turkish"/>
+                        <OutBox l="uk" f="Ukrainian"/>
+                        <OutBox l="ur" f="Urdu"/>
+                        <OutBox l="uz" f="Uzbek"/>
+                        <OutBox l="vi" f="Vietnamese"/>
+                        <OutBox l="yi" f="Yiddish"/>
+                        <OutBox l="yo" f="Yoruba"/>
+                        <OutBox l="zh" f="Chinese Simplified"/>
+                        <OutBox l="zh-TW" f="Chinese Traditional"/>
+                        <OutBox l="zu" f="Zulu"/>
+                    </tbody>
+                </table>
 
 
 
 
-                <button onClick={this.shareFB}>Share FB</button>
+
+
+                <button className="bt-face mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" onClick={this.shareFB}>Share to  Facebook</button>
             </div>
         );
     }
@@ -357,9 +373,10 @@ var OutBox = React.createClass({
     render: function() {
         var input_id = "out_" + this.props.l;
         return (
-            <div>
-                {this.props.l} <input onFocus={this.selectText} ref="textInput" id={input_id}></input> {this.props.f}
-            </div>
+            <tr>
+                <td className="mdl-data-table__cell--non-numeric">{this.props.f} ({this.props.l})</td>
+                <td className="mdl-data-table__cell--non-numeric"><input onFocus={this.selectText} ref="textInput" id={input_id}></input></td>
+            </tr>
         );
     }
 });
