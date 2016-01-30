@@ -436,7 +436,7 @@ var Index = React.createClass({
                 React.createElement(
                     'label',
                     { className: 'mdl-textfield__label padding-left', 'for': 'inputText' },
-                    'Input your text here...'
+                    'Input text of any language here...'
                 )
             ),
             React.createElement(

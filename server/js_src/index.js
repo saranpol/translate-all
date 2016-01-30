@@ -249,7 +249,7 @@ var Index = React.createClass({
             <div className="center">
                 <div className="mdl-card__supporting-text mdl-shadow--2dp mdl-textfield mdl-js-textfield white-bg">
                     <input ref="inputText" onChange={this.inputChange} className="mdl-textfield__input padding-left" type="text" id="inputText"></input>
-                    <label className="mdl-textfield__label padding-left" for="inputText">Input your text here...</label>
+                    <label className="mdl-textfield__label padding-left" for="inputText">Input text of any language here...</label>
                 </div>
 
                 <table className="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
